@@ -1,16 +1,25 @@
-<p>Welcome, {{username}}!</p>
-<p>You currently have balance of <code>{{balance}}</code> in your account.</p>
-<p>Use the form below to transfer funds to another account.</p>
-<form action="/transfer" method="GET">
+<p><center><font size="7"><strong>Welcome, {{username}}!</strong></font></center></p>
+<p><center><font size="5">You currently have <strong><code>{{balance}}</code> EUR</strong> in your bank account.</font></center></p>
+<p><center><font size="5">Use the form below to transfer funds to another account.</font></center></p>
+<form action="/transfer" method="GET"><center>
 	<div>
-		<label>Send funds to account: <input type="text" name="to" value=""></label>
+		<label><font size="5">Send funds to account: <input type="text" name="to" value=""></font></label>
 	</div>
 	<br>
 	<div>
-		<label>Amount: <input type="text" name="amount" value=""></label>
+		<label><font size="5">Amount (EUR): <input type="text" name="amount" value=""></font></label>
 	</div>
 	<br>
 	<div>
 		<input type="submit" value="Transfer">
-	</div>
+	</div></center>
 </form>
+
+<style>
+	body {
+	  background-image: url('https://img.freepik.com/premium-vector/banking-business-banner-finance-savings-silhouette-city-background_48369-11851.jpg?w=2000');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+	}
+	</style>
